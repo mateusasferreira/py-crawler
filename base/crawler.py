@@ -17,3 +17,15 @@ class AbstractCrawler(ABC):
   @abstractmethod
   def input_fill(self, input, value):
     pass
+
+  @abstractmethod
+  def click(self, element):
+    pass
+
+  @abstractmethod
+  def input_fill(self, input: any, value):
+    pass
+
+  @abstractmethod
+  def get_page_content(self):
+    pass
